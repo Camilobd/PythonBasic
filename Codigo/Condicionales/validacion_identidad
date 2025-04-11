@@ -1,0 +1,23 @@
+print("\n___________________________________")
+
+print("1. CC")
+print("2. RC")
+
+print("___________________________________")
+condicion = (int)(input("selecione una opcion digitando el nuemro: "))
+if condicion==1:
+    print("CEDULA")
+    edad=(int)(input("Digite su edad: "))
+    if edad<18:
+        print("METIROSOOOOOOOOOOOOOOOO....")
+    
+else:
+    if(condicion==2):
+        print("REGISTRO")
+        nombre= input("Por favor digite el nombre de su mamá: ")
+        print("gracias por decirme que tu mamá se llama ",nombre)
+    else:
+        print("opcion equivocada")
+
+
+print("FIN DE LA EJECUCION\n")
