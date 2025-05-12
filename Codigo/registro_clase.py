@@ -4,6 +4,7 @@ from random import randint
 nombre_bd=["Camilo", "Juan", "Pedro", "Luis", "Andres", "Alejandra","Marcela","Michael","Yulieth","Felipe"]
 documento=[]# Arreglo de datos 
 nombre=[]
+
 oper=0
 
 while oper!=5:
