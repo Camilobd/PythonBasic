@@ -1,0 +1,66 @@
+from random import randint
+
+#funciones sin parametros y sin valores de retorno
+def menu():
+    print("1. Calcular edad")
+    print("2. Operaciones matematicas")
+    print("3. Validar datos")
+    print("4. Salir")
+
+#Fuincion con parametros y sin valores de retorno
+def calculo_anos(ano_nacimiento):
+    anio_actul=2025
+    anios=anio_actul-ano_nacimiento
+    print ("Ud tiene: ",anios)
+
+#funcion con parametros y valores de retorno
+def operacion(valor1, valor2, signo):
+    res=0
+    if signo=="+":
+        res=valor1+valor2
+    if signo=="-":
+        res=valor1-valor2
+    
+    return res
+
+def validar_dato(min,max,dato):
+    if dato>min and dato<max:
+        return True
+    else:
+        return False
+
+
+
+
+
+opc=0
+while opc!=4:
+    menu()
+    opc=(int) (input("Seleccione la opcion correcta"))
+    
+    if opc==1:
+        calculo_anos(1986)
+
+    if opc==2:
+        resultado=operacion(4,5,"+")
+        print ("el resultado de la operacion es: ",resultado)
+
+        resultado=operacion(4,5,"-")
+        print ("el resultado de la operacion es: ",resultado)
+    
+    if opc==3:
+        cont=0
+        for i in range(0,100):
+            numero= randint(400,550)
+            valido=validar_dato(453,500,numero)
+            if valido:
+                print(numero,"gr, Este queso lo puede vender: ")
+            else:
+                print(numero,"gr,Revise la maquina el queso no cumple con el parametro")
+                cont=cont+1
+
+            if cont==5:
+                print("la produccion se paro porque se despapayo su mayuina")
+                break
+            
+        

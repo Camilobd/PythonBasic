@@ -16,7 +16,6 @@ while oper!=5:
     
     oper=(int)(input("Seleccione la opcion: "))
 
-
     if oper==1:
         print("--------- REGISTRO ESTUDIANTES ----------")
         
@@ -30,7 +29,6 @@ while oper!=5:
 
             documento.append(documento_registro)
             nombre.append(nombre_registro)
-       
 
 
     if oper==2:
