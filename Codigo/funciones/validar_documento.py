@@ -1,5 +1,5 @@
 lista_cc=["1051","1052","1053","1054","1055","1056","1057"]
-lista_Cervezas=["0","0","0","0","0","0","0"]
+lista_Cervezas=["0","1","0","1","0","2","1"]
 
 def ced_correcta(lista_cc, cedula):
     valido=True
@@ -36,7 +36,13 @@ def listado_tomar():
 opc=0
 while opc!=2:
     opc=menu()
-    listado_tomar()
+    #listado_tomar()
+    
+    cc=input("Digite su cedula: ") 
+    print("su indice es:",retorno_indice(cc,lista_cc))    
+
+
+
 
     
 
